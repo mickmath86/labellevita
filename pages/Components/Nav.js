@@ -19,34 +19,34 @@ import { ChevronDownIcon } from '@heroicons/react/solid'
 
 const features = [
   {
-    name: 'Analytics',
+    name: 'Due Dilligence',
     href: '#',
     description: 'Get a better understanding of where your traffic is coming from.',
     icon: ChartBarIcon,
   },
   {
-    name: 'Engagement',
+    name: 'Sales Information',
     href: '#',
     description: 'Speak directly to your customers in a more meaningful way.',
     icon: CursorClickIcon,
   },
   { name: 'Security', href: '#', description: "Your customers' data will be safe and secure.", icon: ShieldCheckIcon },
   {
-    name: 'Integrations',
+    name: 'Cost Estimates',
     href: '#',
     description: "Connect with third-party tools that you're already using.",
     icon: ViewGridIcon,
   },
   {
-    name: 'Automations',
+    name: 'Sales Incentives',
     href: '#',
     description: 'Build strategic funnels that will drive your customers to convert',
     icon: RefreshIcon,
   },
 ]
 const callsToAction = [
-  { name: 'Watch Demo', href: '#', icon: PlayIcon },
-  { name: 'Contact Sales', href: '#', icon: PhoneIcon },
+ 
+  { name: 'Contact', href: '/contact', icon: PhoneIcon },
 ]
 const resources = [
   {
@@ -113,7 +113,7 @@ export default function Hero() {
                             'group bg-white rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500'
                           )}
                         >
-                          <span>Solutions</span>
+                          <span>Project Files</span>
                           <ChevronDownIcon
                             className={classNames(
                               open ? 'text-gray-600' : 'text-gray-400',
@@ -174,10 +174,10 @@ export default function Hero() {
                   </Popover>
 
                   <a href="#" className="text-base font-medium text-gray-500 hover:text-gray-900">
-                    Project Files
+                  Gallery
                   </a>
-                  <a href="#" className="text-base font-medium text-gray-500 hover:text-gray-900">
-                    Gallery
+                  <a href="/contact" className="text-base font-medium text-gray-500 hover:text-gray-900">
+                    Contact
                   </a>
 
                   {/* <Popover className="relative">
