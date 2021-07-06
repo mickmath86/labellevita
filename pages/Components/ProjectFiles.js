@@ -92,7 +92,7 @@ const posts = [
           </div>
           <div className="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-2 lg:max-w-none">
             {posts.map((post) => (
-                <Link href={post.href}>
+                <Link key="1" href={post.href}>
                 
             <a className="hover:pointer">
               <div key={post.title} className="flex flex-col rounded-lg shadow-lg hover:shadow-md overflow-hidden ">

@@ -1,6 +1,7 @@
 /* This example requires Tailwind CSS v2.0+ */
 import Link from 'next/link'
 import Image from 'next/image'
+import Logo from '../../public/logo.svg'
 
 import { Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
@@ -19,6 +20,7 @@ import {
   XIcon,
 } from '@heroicons/react/outline'
 import { ChevronDownIcon } from '@heroicons/react/solid'
+import { images } from '../../next.config'
 
 const features = [
   {
@@ -96,7 +98,7 @@ export default function Hero() {
                     <span className="sr-only">Workflow</span>
                     <Image
                       className="h-8 w-auto sm:h-10"
-                      src="https://tailwindui.com/img/logos/workflow-mark-blue-600.svg"
+                      src={Logo}
                       alt=""
                       layout="fill"
                     />
