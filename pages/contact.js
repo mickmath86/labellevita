@@ -1,5 +1,5 @@
 import Layout from "./Components/Layout"
-
+import Image from 'next/image'
 
 export default function Contact() {
   return (
@@ -7,7 +7,7 @@ export default function Contact() {
     <div className="relative bg-white">
       <div className="lg:absolute lg:inset-0">
         <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-          <img
+          <Image
             className="h-56 w-full object-cover lg:absolute lg:h-full"
             src="img4.jpg"
             alt=""

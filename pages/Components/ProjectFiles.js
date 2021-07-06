@@ -1,4 +1,7 @@
 /* This example requires Tailwind CSS v2.0+ */
+import Link from 'next/link'
+
+
 const posts = [
     {
       title: 'Due Dilligence',
@@ -89,7 +92,9 @@ const posts = [
           </div>
           <div className="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-2 lg:max-w-none">
             {posts.map((post) => (
-            <a className="hover:pointer"href={post.href}>
+                <Link href={post.href}>
+                
+            <a className="hover:pointer">
               <div key={post.title} className="flex flex-col rounded-lg shadow-lg hover:shadow-md overflow-hidden ">
                 <div className="flex-shrink-0">
                     <div className="bg-blue-700 h-1"></div>
@@ -98,22 +103,22 @@ const posts = [
                 <div className="flex-1 bg-white p-6 flex flex-col justify-between">
                   <div className="flex-1">
                     <p className="text-sm font-medium text-indigo-600">
-                      <a href={post.category.href} className="hover:underline">
+                      <Link href={post.category.href} className="hover:underline">
                         {post.category.name}
-                      </a>
+                      </Link>
                     </p>
-                    <a href={post.href} className="block mt-2">
+                    <Link href={post.href} className="block mt-2">
                       <p className="text-xl font-semibold text-gray-900">{post.title}</p>
                       {/* <p className="mt-3 text-base text-gray-500">{post.description}</p> */}
-                    </a>
+                    </Link>
                   </div>
                   <div className="mt-6 flex items-center">
                     
                     <div className="ml-3">
                       <p className="text-sm font-medium text-gray-900">
-                        <a href={post.author.href} className="hover:underline">
+                        <Link href={post.author.href} className="hover:underline">
                           {post.author.name}
-                        </a>
+                        </Link>
                       </p>
                       <div className="flex space-x-1 text-sm text-gray-500">
                         <time dateTime={post.datetime}>{post.date}</time>
@@ -125,6 +130,7 @@ const posts = [
                 </div>
               </div>
               </a>
+              </Link>
             ))}
           </div>
         </div>

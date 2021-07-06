@@ -1,4 +1,6 @@
 /* This example requires Tailwind CSS v2.0+ */
+import Image from 'next/image'
+import img3 from '../../public/img3.jpg'
 const metrics = [
     { id: 1, stat: '8K+', emphasis: 'Companies', rest: 'use laoreet amet lacus nibh integer quis.' },
     { id: 2, stat: '25K+', emphasis: 'Countries around the globe', rest: 'lacus nibh integer quis.' },
@@ -12,9 +14,9 @@ const metrics = [
         <div className="h-80 w-full absolute bottom-0 xl:inset-0 xl:h-full">
           <div className="h-full w-full xl:grid xl:grid-cols-2">
             <div className="h-full xl:relative xl:col-start-2">
-              <img
+              <Image
                 className="h-full w-full object-cover opacity-25 xl:absolute xl:inset-0"
-                src="img3.jpg"
+                src={img3}
                 alt="People working on laptops"
               />
               <div
