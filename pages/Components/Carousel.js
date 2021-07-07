@@ -1,4 +1,5 @@
 import { useState, createRef } from "react";
+import Image from 'next/image'
 
 const images = ['img2.jpg', 'img3.jpg', 'img1.jpg']
 // images must be an array of urls , if using Next JS this could something like
@@ -91,7 +92,7 @@ export default function Carousel() {
           {sliderControl(true)}
           {images.map((img, i) => (
             <div className="w-full flex-shrink-0" key={img} ref={refs[i]}>
-              <img src={img} className="w-full object-contain" />
+              <Image src={img} className="w-full object-contain" />
             </div>
           ))}
           {sliderControl()}
