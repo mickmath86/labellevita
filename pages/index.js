@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Layout from './Components/Layout'
 import Hero from './Components/Hero'
-// import Slider from './Components/SimpleSlider'
+import Carousel from './Components/Carousel'
 import ProjectFiles from './Components/ProjectFiles'
 import FeaturedOne from './Components/FeaturedOne'
 
@@ -22,6 +22,7 @@ export default function Home() {
       <Layout>
         <Hero />
         <FeaturedOne />
+        <Carousel />
         <ProjectFiles /> 
       </Layout>
 

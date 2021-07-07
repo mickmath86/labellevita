@@ -35,7 +35,6 @@ const features = [
     description: 'Speak directly to your customers in a more meaningful way.',
     icon: CursorClickIcon,
   },
-  { name: 'Security', href: '#', description: "Your customers' data will be safe and secure.", icon: ShieldCheckIcon },
   {
     name: 'Cost Estimates',
     href: '#',
@@ -72,7 +71,6 @@ const resources = [
     href: '#',
     icon: CalendarIcon,
   },
-  { name: 'Security', description: 'Understand how we take your privacy seriously.', href: '#', icon: ShieldCheckIcon },
 ]
 const recentPosts = [
   { id: 1, name: 'Boost your conversion rate', href: '#' },
@@ -94,15 +92,16 @@ export default function Hero() {
               <div className="flex justify-between items-center py-6 md:justify-start md:space-x-10">
                 <div className="flex justify-start lg:w-0 lg:flex-1">
                   <Link href="/">
-                  <a>
-                    <span className="sr-only">Workflow</span>
-                    <Image
-                      className="h-8 w-auto sm:h-10"
-                      src={Logo}
-                      alt=""
-                      layout="fill"
-                    />
-                  </a>
+                    <a>
+                      <span className="sr-only">Workflow</span>
+                      <Image
+                        
+                        src={Logo}
+                        height={40}
+                        alt=""
+                        
+                      />
+                    </a>
                   </Link>
                   
                 </div>

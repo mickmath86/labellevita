@@ -1,6 +1,6 @@
 /* This example requires Tailwind CSS v2.0+ */
 import Image from 'next/image'
-import img3 from '../../public/img3.jpg'
+import cad from '../../public/cad.png'
 const metrics = [
     { id: 1, stat: '8K+', emphasis: 'Companies', rest: 'use laoreet amet lacus nibh integer quis.' },
     { id: 2, stat: '25K+', emphasis: 'Countries around the globe', rest: 'lacus nibh integer quis.' },
@@ -10,13 +10,13 @@ const metrics = [
   
   export default function FeaturedOne() {
     return (
-      <div className="relative bg-gray-900">
+      <div className="relative bg-gray-900 overflow-hidden">
         <div className="h-80 w-full absolute bottom-0 xl:inset-0 xl:h-full">
           <div className="h-full w-full xl:grid xl:grid-cols-2">
             <div className="h-full xl:relative xl:col-start-2">
               <Image
                 className="h-full w-full object-cover opacity-25 xl:absolute xl:inset-0"
-                src={img3}
+                src={cad}
                 alt="People working on laptops"
               />
               <div
@@ -30,10 +30,10 @@ const metrics = [
           <div className="relative pt-12 pb-64 sm:pt-24 sm:pb-64 xl:col-start-1 xl:pb-24">
             <h2 className="text-sm font-semibold text-indigo-300 tracking-wide uppercase">Valuable Metrics</h2>
             <p className="mt-3 text-3xl font-extrabold text-white">
-              Get actionable data that will help grow your business
+             Header Copy for La Belle Vita 
             </p>
             <p className="mt-5 text-lg text-gray-300">
-              Rhoncus sagittis risus arcu erat lectus bibendum. Ut in adipiscing quis in viverra tristique sem. Ornare
+              Some Paragraph text here describing the project. <br />  Rhoncus sagittis risus arcu erat lectus bibendum. Ut in adipiscing quis in viverra tristique sem. Ornare
               feugiat viverra eleifend fusce orci in quis amet. Sit in et vitae tortor, massa. Dapibus laoreet amet lacus
               nibh integer quis. Eu vulputate diam sit tellus quis at.
             </p>

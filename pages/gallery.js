@@ -1,16 +1,24 @@
 import React from 'react'
 import Layout from './Components/Layout'
-// import SimpleSlider from './Components/Slider'
 
-function gallery() {
+import Carousel from './Components/Carousel'
+
+export default function gallery() {
+    const SLIDE_COUNT = 5;
+    const slides = Array.from(Array(SLIDE_COUNT).keys());
+
     return (
         <div>
             <Layout>
-                 {/* <SimpleSlider /> */}
+             {/* <EmblaCarousel slides={slides} /> */}
+             <div className="w-100">
+             <Carousel />
+             </div>
+            
             </Layout>
            
         </div>
     )
 }
 
-export default gallery
+ 
