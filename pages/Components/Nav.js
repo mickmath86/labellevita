@@ -25,7 +25,7 @@ import { images } from '../../next.config'
 const features = [
   {
     name: 'Due Dilligence',
-    href: '#',
+    href: 'https://drive.google.com/drive/folders/1ddDJ-DvXk2Lhsoax8n4iJcVj2juhnr60',
     description: 'Get a better understanding of where your traffic is coming from.',
     icon: ChartBarIcon,
   },
@@ -37,7 +37,7 @@ const features = [
   },
   {
     name: 'Cost Estimates',
-    href: '#',
+    href: 'https://drive.google.com/drive/folders/1yxFc3ZhNs9e1f2t01IYehUtIGBPp83sV',
     description: "Connect with third-party tools that you're already using.",
     icon: ViewGridIcon,
   },
